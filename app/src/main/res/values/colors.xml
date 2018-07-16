@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="themeYellow">#fcf402</color>
+    <color name="colorMine1">#503D3F</color>
+    <color name="colorMine2">#615756</color>
+    <color name="colorMine3">#539987</color>
+    <color name="colorMine4">#52FFB8</color>
+    <color name="colorMine5">#4DFFF3</color>
+    <color name="fakecard">#bbffffff</color>
+</resources>

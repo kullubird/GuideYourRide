@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.kevin.guideyourride.DetailsActivity"
+    android:background="@drawable/bny"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/mybar"
+        android:id="@+id/myAppBar"></include>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#be000000"
+        android:layout_gravity="center">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Vehicle Details"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/fakecard"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Vehicle Status: "
+            android:textSize="30dp"
+            android:gravity="bottom"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="OFF"
+            android:textSize="30dp"
+            android:gravity="bottom"
+            android:textColor="#000000"
+            android:id="@+id/txt_vehicle_status"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/fakecard"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/speed"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 30"
+            android:textSize="40dp"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:id="@+id/txt_speed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" km/h"
+            android:textSize="40dp"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#bbffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/helmet"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="OFF"
+            android:textSize="40dp"
+            android:gravity="bottom"
+            android:paddingLeft="30dp"
+            android:textColor="#000000"
+            android:id="@+id/txt_helmet_status"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:weightSum="2"
+        >
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="#bbffffff"
+           android:layout_weight="1"
+           android:layout_marginRight="10dp"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Rash Cuts"
+               android:textSize="30dp"
+               android:textColor="#000000"
+               android:layout_gravity="center"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="25dp"
+               android:text="2"
+               android:textColor="#000000"
+               android:layout_gravity="center"
+               android:id="@+id/txt_cut_count"
+               />
+
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#bbffffff"
+            android:layout_weight="1"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23:17"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:id="@+id/txt_duration"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#bbffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:onClick="showMaps"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/locate"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#bbffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:onClick="buzzRider"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/log"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>

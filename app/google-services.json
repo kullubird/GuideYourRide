@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "448281923938",
+    "firebase_url": "https://guideyourride-4d8f1.firebaseio.com",
+    "project_id": "guideyourride-4d8f1",
+    "storage_bucket": "guideyourride-4d8f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448281923938:android:1084b900e9322a84",
+        "android_client_info": {
+          "package_name": "android.kevin.guideyourride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448281923938-helnk8ohiivclukgp5vot9bd67gq3tqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.kevin.guideyourride",
+            "certificate_hash": "ed7d575e60d3154adeab4e6112c77306e12e80cf"
+          }
+        },
+        {
+          "client_id": "448281923938-vh235boucuui6lo26uebvvbabm8o07ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAL82gFY3FVJvseVsiSLM29V_mj5W2MHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448281923938-vh235boucuui6lo26uebvvbabm8o07ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
