@@ -24,6 +24,22 @@ public class SignIn extends AppCompatActivity {
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     private FirebaseAuth mAuth;
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if(currentUser!=null)
+        {
+            Intent i= new Intent(getApplicationContext(),DetailsActivity.class);
+            startActivity(i);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

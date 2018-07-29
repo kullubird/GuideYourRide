@@ -12,6 +12,7 @@ import com.google.firebase.FirebaseException;
 import com.google.firebase.FirebaseTooManyRequestsException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
@@ -26,6 +27,20 @@ public class SignUp extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String mVerificationId;
 
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if(currentUser!=null)
+        {
+            Intent i= new Intent(getApplicationContext(),DetailsActivity.class);
+            startActivity(i);
+        }
+    }
 
 
     @Override

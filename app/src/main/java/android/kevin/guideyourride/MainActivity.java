@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-Button BtnSignIn,BtnSignUp;
+    Button BtnSignIn,BtnSignUp;
 
     @Override
     protected void onStart() {
