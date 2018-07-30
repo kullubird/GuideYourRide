@@ -14,7 +14,7 @@
 
 
     <style name="CustStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
-    <item name="android:background">#ffffff</item>
+    <item name="android:background">#181e1e</item>
         <item name="android:textColor">#acd03e</item>
     </style>
     <style name="popUpStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
